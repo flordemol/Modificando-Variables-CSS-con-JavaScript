@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estilos CSS con JS</title>
+</head>
+<body>
+    
+    <div id="container">
+        
+        <h1>Modificando variables CSS con <span id="js">JavaScript</span></h1>
+
+        <div id="controles">
+
+            <div>
+                <label for="tamanoMarco">Tamaño marco:</label>
+                <input type="range" name="tamanoMarco" min="0" max="150" value="15" data-sizing="px">
+            </div>
+            <div>
+                <label for="colorMarco">Color marco:</label>
+                <input type="color" name="colorMarco" value="#4a87e8">
+            </div>
+            <div>
+                <label for="blur">Difuminado:</label>
+                <input name="blur" type="range" min="-10" max="20" value="10" data-sizing="px">
+            </div>
+            <div>
+                <button id='cambiarFoto' onclick="cambiarFoto()">Cambiar foto</button>
+            </div>
+
+        </div>
+
+        <div id="foto">
+            <img src="foto1.jpg" id="imagen" alt="foto">
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

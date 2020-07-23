@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+
+:root {
+    --colorMarco: #4a87e8;
+    --tamanoMarco: 10px;
+    --blur: 5px;
+    --fotoInicial: "foto.jpg";
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    color: #424242;
+  }
+
+#container {
+    width: 90%;
+    height:100vh;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 50px;
+}
+
+#js {
+    color: var(--colorMarco);
+}
+
+#controles {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+    border: 2px var(--colorMarco) solid;
+    font-weight: 700;
+    color: #424242;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #424242;
+    color: white;
+}
+
+label {
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+input {
+    cursor: pointer;
+    width: 150px;
+}
+
+#foto {
+   max-width: 1500px;
+   margin: auto;
+   margin-top: 80px;
+}
+
+img {
+    width: 50%;
+    height: 50%;   
+    margin: 0;
+    padding: var(--tamanoMarco);
+    background: var(--colorMarco);
+    filter: blur(var(--blur)); 
+}
